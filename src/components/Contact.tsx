@@ -21,6 +21,34 @@ const Contact = () => {
     // Simulate form submission
     setTimeout(() => {
       setFormSubmitted(true);
+      const payload = 
+      {
+        "name": formData.name,
+        "email": formData.email,
+        "phone": formData.phone,
+        "company": formData.company,
+        "message": formData.message
+      }
+
+      fetch('https://hook.us2.make.com/66ke29bhl986r67vfsfofl95o4se9nhg', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(payload),
+      })
+      .then(response => {
+        if (!response.ok) {
+          throw new Error(`Erro ao enviar: ${response.statusText}`);
+        }
+        return response.text();
+      })
+      .then(result => {
+        console.log('Enviado com sucesso:', result);
+      })
+      .catch(error => {
+        console.error('Erro ao enviar para o Zapier:', error);
+      });
       setFormData({
         name: '',
         email: '',
