@@ -8,7 +8,7 @@ const About = () => {
           <div className="relative">
             <div className="relative rounded-lg overflow-hidden aspect-square shadow-2xl">
               <img 
-                src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750" 
+                src="https://i0.wp.com/people.com.ai/wp-content/uploads/2022/01/6-mitos-sobre-chatbots-com-inteligencia-artificial.jpg?fit=1000%2C667&ssl=1" 
                 alt="Uai5 Team" 
                 className="w-full h-full object-cover"
               />
