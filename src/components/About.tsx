@@ -35,7 +35,7 @@ const About = () => {
             </h2>
             
             <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-              Fundada em 2025, a Uai5 nasceu com o propósito de democratizar o acesso a soluções inteligentes e personalizadas por meio de automação, 
+              A Uai5 nasceu com o propósito de democratizar o acesso a soluções inteligentes e personalizadas por meio de automação, 
               inteligência artificial, chatbots e integrações, de forma acessível para empresas de todos os tamanhos. 
               Queremos transformar a forma como as empresas se conectam com seus clientes e otimizam processos, utilizando tecnologias que agregam valor real ao seu negócio.
             </p>
