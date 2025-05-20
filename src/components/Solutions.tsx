@@ -6,7 +6,7 @@ const solutions: Solution[] = [
     id: 1,
     title: "Chatbots para Atendimento",
     description: "Chatbots inteligentes que utilizam processamento de linguagem natural para atender clientes 24/7 com respostas precisas e personalizadas.",
-    image: "https://images.pexels.com/photos/8439094/pexels-photo-8439094.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750",
+    image: "https://www.dnkinfotelecom.com.br/wp-content/uploads/2021/04/chatbot-no-atendimento.png",
     features: [
       "Atendimento 24 horas por dia, 7 dias por semana",
       "Integração com múltiplos canais de comunicação",
@@ -18,7 +18,7 @@ const solutions: Solution[] = [
     id: 2,
     title: "Automação de Conversas",
     description: "Soluções de automação inteligente que identificam padrões em conversas, aprendem com interações anteriores e melhoram continuamente.",
-    image: "https://images.pexels.com/photos/1181298/pexels-photo-1181298.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750",
+    image: "https://zapmizer.com/blog/wp-content/uploads/2024/12/THUMB-BLOG-Ferias-sem-estresse-A-importancia-de-automatizar-o-atendimento-no-WhatsApp-Business-1170x658.jpg",
     features: [
       "Automação de respostas frequentes",
       "Análise de sentimento em tempo real",
