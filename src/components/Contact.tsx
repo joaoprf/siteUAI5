@@ -161,8 +161,9 @@ const Contact = () => {
                 <div className="flex space-x-4">
                   
                   <a 
-                    href="#" 
+                    href="https://www.linkedin.com/company/uai5/about/" 
                     className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-600 hover:bg-green-800 hover:text-white transition-colors"
+                    target="_blank"
                   >
                     <svg 
                       xmlns="http://www.w3.org/2000/svg" 
