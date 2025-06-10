@@ -37,10 +37,10 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex items-center justify-between">
-          <a href="#home" className="text-2xl md:text-3xl font-bold">
-            <span className="text-gray-900">Uai</span>
-            <span className="text-green-800">5</span>
-            <img src="src/types/logo.png" alt="Logo Uai5" class="h-7 w-7 ml-2" />
+          <a href="#home" class="text-2xl md:text-3xl font-bold flex items-center">
+          <span class="text-gray-900">Uai</span>
+          <span class="text-green-800">5</span>
+          <img src="src/types/sua-logo.svg" alt="Logo Uai5" class="h-8 w-8 ml-2" />
           </a>
           
           {/* Desktop Navigation */}
