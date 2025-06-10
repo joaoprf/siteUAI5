@@ -18,8 +18,9 @@ const Footer = () => {
             <div className="flex space-x-4">
              
               <a 
-                href="#" 
+                href="https://www.linkedin.com/company/uai5/about/" 
                 className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-green-700 hover:text-white transition-colors"
+                target="_blank"
               >
                 <svg 
                   xmlns="http://www.w3.org/2000/svg" 
@@ -34,6 +35,7 @@ const Footer = () => {
               <a 
                 href="https://www.instagram.com/uai.five/" 
                 className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-green-700 hover:text-white transition-colors"
+                target="_blank"
               >
                 <svg 
                   xmlns="http://www.w3.org/2000/svg" 
