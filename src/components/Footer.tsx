@@ -12,7 +12,7 @@ const Footer = () => {
             </h3>
             
             <p className="text-gray-400 mb-6">
-              Transformamos negócios com soluções de inteligência artificial e chatbots personalizados para cada necessidade.
+              Conecte, inove e cresça com soluções inteligentes que falam a linguagem do seu negócio
             </p>
             
             <div className="flex space-x-4">
