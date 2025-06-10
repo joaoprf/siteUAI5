@@ -40,6 +40,7 @@ const Navbar = () => {
           <a href="#home" className="text-2xl md:text-3xl font-bold">
             <span className="text-gray-900">Uai</span>
             <span className="text-green-800">5</span>
+            <img src="src/types/logo.png" alt="Logo Uai5" class="h-8 w-8 ml-2" />
           </a>
           
           {/* Desktop Navigation */}
