@@ -36,9 +36,8 @@ const About = () => {
             
             <p className="text-lg text-gray-700 mb-6 leading-relaxed">
               A Uai5 nasceu com o propósito de levar o melhor da tecnologia – de forma acessível e eficiente – para empresas de todos os tamanhos. 
-Nosso foco é oferecer soluções inteligentes e personalizadas que realmente façam sentido para o seu negócio, utilizando automação, chatbots, integrações e tecnologias conversacionais.
-
-Mais do que aplicar tecnologia por tendência, acreditamos em soluções que agregam valor real, otimizam processos e fortalecem o relacionamento entre empresas e seus clientes.
+Nosso foco é oferecer soluções inteligentes e personalizadas que realmente façam sentido para o seu negócio, utilizando automação, chatbots, integrações e tecnologias conversacionais. <br>
+Mais do que aplicar tecnologia por tendência, acreditamos em soluções que agregam valor real, otimizam processos e fortalecem o relacionamento entre empresas e seus clientes. </br>
 Nossa equipe é formada por especialistas com mais de 6 anos de experiência em desenvolvimento, suporte e sustentação de chatbots, automações e soluções de inteligência conversacional, atuando em diversos segmentos do mercado.
             </p>
             
