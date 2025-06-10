@@ -31,7 +31,7 @@ const About = () => {
           
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-              Sobre a <span className="text-green-800">Uai5</span>
+              Sobre a <span style="color: #00c853;">Uai5</span>
             </h2>
             
             <p className="text-lg text-gray-700 mb-6 leading-relaxed">
