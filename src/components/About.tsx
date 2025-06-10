@@ -35,9 +35,10 @@ const About = () => {
             </h2>
             
             <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-              A Uai5 nasceu com o propósito de democratizar o acesso a soluções inteligentes e personalizadas por meio de automação, 
-              inteligência artificial, chatbots e integrações, de forma acessível para empresas de todos os tamanhos. 
-              Queremos transformar a forma como as empresas se conectam com seus clientes e otimizam processos, utilizando tecnologias que agregam valor real ao seu negócio.
+              A Uai5 nasceu com o propósito de levar o melhor da tecnologia – de forma acessível e eficiente – para empresas de todos os tamanhos. 
+Nosso foco é oferecer soluções inteligentes e personalizadas que realmente façam sentido para o seu negócio, utilizando automação, chatbots, integrações e tecnologias conversacionais.
+Mais do que aplicar tecnologia por tendência, acreditamos em soluções que agregam valor real, otimizam processos e fortalecem o relacionamento entre empresas e seus clientes.
+Nossa equipe é formada por especialistas com mais de 6 anos de experiência\n em desenvolvimento, suporte e sustentação de chatbots, automações e soluções de inteligência conversacional, atuando em diversos segmentos do mercado.
             </p>
             
             <p className="text-lg text-gray-700 mb-6 leading-relaxed">
