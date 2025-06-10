@@ -76,7 +76,7 @@ const Contact = () => {
               
               <p className="text-lg text-gray-700 mb-8 leading-relaxed">
                 Estamos prontos para ajudar sua empresa a alcançar todo o potencial 
-                com nossas soluções de inteligência artificial. Preencha o formulário 
+                com nossas soluções personalizadas, criadas sob medida para sua necessidade. Preencha o formulário 
                 e nossa equipe entrará em contato.
               </p>
               
