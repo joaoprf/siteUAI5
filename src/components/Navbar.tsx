@@ -7,7 +7,7 @@ const navItems: NavItem[] = [
   { label: 'Serviços', href: '#services' },
   { label: 'Sobre', href: '#about' },
   { label: 'Soluções', href: '#solutions' },
-  { label: 'Contato', href: '#contact' },
+  { label: 'Contato', href: '#contact' }, // O link para contato já existe aqui
 ];
 
 const Navbar = () => {
@@ -23,26 +23,26 @@ const Navbar = () => {
     };
 
     window.addEventListener('scroll', handleScroll);
-    
+
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, [scrolled]);
 
   return (
-    <header 
+    <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled ? 'bg-white shadow-md py-2' : 'bg-transparent py-4'
       }`}
     >
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex items-center justify-between">
-          <a href="#home" class="text-2xl md:text-3xl font-bold flex items-center">
-          <span class="text-gray-900">Uai</span>
-          <span class="text-green-800">5</span>
-          <img src="/images/logo2.png" alt="Logo Uai5" class="h-8 w-8 ml-2" />
+          <a href="#home" className="text-2xl md:text-3xl font-bold flex items-center">
+            <span className="text-gray-900">Uai</span>
+            <span className="text-green-800">5</span>
+            <img src="/images/logo2.png" alt="Logo Uai5" className="h-8 w-8 ml-2" />
           </a>
-          
+
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
             {navItems.map((item) => (
@@ -50,8 +50,8 @@ const Navbar = () => {
                 key={item.label}
                 href={item.href}
                 className={`font-medium transition-colors ${
-                  scrolled 
-                    ? 'text-gray-800 hover:text-green-700' 
+                  scrolled
+                    ? 'text-gray-800 hover:text-green-700'
                     : 'text-gray-800 hover:text-green-700'
                 }`}
               >
@@ -59,13 +59,16 @@ const Navbar = () => {
               </a>
             ))}
           </nav>
-          
-          <button
+
+          {/* Botão Fale Conosco - Desktop */}
+          {/* Alterado de <button> para <a> e adicionado href */}
+          <a
+            href="#contact" // Redireciona para a seção #contact
             className="hidden md:block px-5 py-2 bg-green-800 hover:bg-green-700 text-white font-medium rounded-md transition-colors duration-300"
           >
             Fale Conosco
-          </button>
-          
+          </a>
+
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
@@ -76,7 +79,7 @@ const Navbar = () => {
           </button>
         </div>
       </div>
-      
+
       {/* Mobile Navigation */}
       {isOpen && (
         <div className="md:hidden bg-white">
@@ -86,17 +89,21 @@ const Navbar = () => {
                 <a
                   key={item.label}
                   href={item.href}
-                  onClick={() => setIsOpen(false)}
+                  onClick={() => setIsOpen(false)} // Fecha o menu ao clicar
                   className="font-medium text-gray-800 hover:text-green-700"
                 >
                   {item.label}
                 </a>
               ))}
-              <button
+              {/* Botão Fale Conosco - Mobile */}
+              {/* Alterado de <button> para <a> e adicionado href */}
+              <a
+                href="#contact" // Redireciona para a seção #contact
+                onClick={() => setIsOpen(false)} // Fecha o menu ao clicar
                 className="w-full px-5 py-2 bg-green-800 hover:bg-green-700 text-white font-medium rounded-md transition-colors duration-300"
               >
                 Fale Conosco
-              </button>
+              </a>
             </nav>
           </div>
         </div>
