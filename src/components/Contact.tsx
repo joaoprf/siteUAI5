@@ -107,7 +107,7 @@ const Contact = () => {
                 </div>
                 
                <div className="flex items-start space-x-4">
-    <a href="https://wa.me/5531997835768" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2 group">
+    <a href="https://wa.me/5531990763080" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2 group">
         <div className="flex-shrink-0">
             <div className="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center text-green-800 group-hover:bg-green-200 group-hover:text-green-900 transition-colors">
                 <svg
