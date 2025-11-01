@@ -29,7 +29,7 @@ Essas discussões reforçam o propósito da **Uai5**: criar **soluções que une
 
 Com a evolução da IA, os **chatbots deixaram de ser apenas respostas automáticas** e se tornaram **assistentes inteligentes** capazes de compreender contexto, intenção e até emoções.  
 
-Na Uai5, aplicamos essa tecnologia para construir soluções sob medida, integradas a plataformas líderes como **Botmaker** e **Blip**, sempre com foco em resultados:
+Na Uai5, aplicamos essa tecnologia para construir soluções sob medida, integradas a plataformas líderes como a plataforma da **Botmaker**, sempre com foco em resultados:
 
 - Redução de tempo médio de atendimento  
 - Aumento de conversão em canais digitais  
