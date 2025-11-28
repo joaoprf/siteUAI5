@@ -1,0 +1,117 @@
+// Prisma Schema para CMS Blog Uai5
+// SQLite com possibilidade de migração para PostgreSQL
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+// ============================================
+// USUÁRIOS
+// ============================================
+model User {
+  id           String   @id @default(uuid())
+  name         String
+  email        String   @unique
+  passwordHash String   @map("password_hash")
+  role         String   @default("author") // 'admin', 'editor', 'author'
+  createdAt    DateTime @default(now()) @map("created_at")
+  updatedAt    DateTime @updatedAt @map("updated_at")
+
+  // Relacionamentos
+  postsAsAuthor   Post[] @relation("PostAuthor")
+  postsAsCoauthor Post[] @relation("PostCoauthor")
+
+  @@map("users")
+}
+
+// ============================================
+// POSTS
+// ============================================
+model Post {
+  id              String    @id @default(uuid())
+  slug            String    @unique
+  title           String
+  description     String
+  contentMarkdown String    @map("content_markdown")
+  status          String    @default("draft") // 'draft' ou 'published'
+  publishedAt     DateTime? @map("published_at")
+  
+  // Autoria
+  authorId   String @map("author_id")
+  author     User   @relation("PostAuthor", fields: [authorId], references: [id])
+  coauthorId String? @map("coauthor_id")
+  coauthor   User?   @relation("PostCoauthor", fields: [coauthorId], references: [id])
+
+  // Timestamps
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  // Relacionamentos N:N
+  categories PostCategory[]
+  tags       PostTag[]
+
+  @@map("posts")
+}
+
+// ============================================
+// CATEGORIAS
+// ============================================
+model Category {
+  id          String   @id @default(uuid())
+  name        String
+  slug        String   @unique
+  description String?
+  createdAt   DateTime @default(now()) @map("created_at")
+  updatedAt   DateTime @updatedAt @map("updated_at")
+
+  // Relacionamentos
+  posts PostCategory[]
+
+  @@map("categories")
+}
+
+// ============================================
+// TAGS/HASHTAGS
+// ============================================
+model Tag {
+  id        String   @id @default(uuid())
+  name      String
+  slug      String   @unique
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  // Relacionamentos
+  posts PostTag[]
+
+  @@map("tags")
+}
+
+// ============================================
+// TABELAS DE RELACIONAMENTO N:N
+// ============================================
+model PostCategory {
+  postId     String @map("post_id")
+  categoryId String @map("category_id")
+
+  post     Post     @relation(fields: [postId], references: [id], onDelete: Cascade)
+  category Category @relation(fields: [categoryId], references: [id], onDelete: Cascade)
+
+  @@id([postId, categoryId])
+  @@map("posts_categories")
+}
+
+model PostTag {
+  postId String @map("post_id")
+  tagId  String @map("tag_id")
+
+  post Post @relation(fields: [postId], references: [id], onDelete: Cascade)
+  tag  Tag  @relation(fields: [tagId], references: [id], onDelete: Cascade)
+
+  @@id([postId, tagId])
+  @@map("posts_tags")
+}
