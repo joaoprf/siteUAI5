@@ -27,6 +27,10 @@ import authRoutes from './modules/auth/auth.routes.js';
 import postRoutes from './modules/posts/post.routes.js';
 import categoryRoutes from './modules/categories/category.routes.js';
 import tagRoutes from './modules/tags/tag.routes.js';
+import uploadRoutes from './modules/upload/upload.routes.js';
+
+// Servir arquivos estáticos (uploads)
+app.use('/uploads', express.static('uploads'));
 
 // Rota de health check
 app.get('/health', (req, res) => {
@@ -42,6 +46,7 @@ app.use('/api/auth', authRoutes);
 app.use('/api/posts', postRoutes);
 app.use('/api/categories', categoryRoutes);
 app.use('/api/tags', tagRoutes);
+app.use('/api/upload', uploadRoutes);
 
 // ============================================
 // TRATAMENTO DE ERROS

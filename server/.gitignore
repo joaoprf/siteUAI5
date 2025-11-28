@@ -7,9 +7,13 @@ node_modules/
 # Build output
 dist/
 
-# Database
+# SQLite
 *.db
 *.db-journal
+
+# Uploads (imagens)
+uploads/
+!uploads/.gitkeep
 
 # Logs
 logs/
