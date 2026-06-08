@@ -24,7 +24,7 @@ export default function ChatbotWhatsApp() {
     <div className="min-h-screen bg-white text-gray-900">
       <Seo
         title="Chatbot para WhatsApp com Inteligência Artificial | Uai5"
-        description="Automatize o atendimento da sua empresa com chatbots inteligentes no WhatsApp. A Uai5 é parceira da Botmaker e desenvolve soluções com IA sob medida."
+        description="Automatize o atendimento da sua empresa com chatbots inteligentes no WhatsApp. A Uai5 é parceira certificada Botmaker e desenvolve soluções com IA sob medida."
         keywords={[
           "chatbot WhatsApp",
           "empresa de chatbot",
@@ -37,7 +37,7 @@ export default function ChatbotWhatsApp() {
           "atendimento automático WhatsApp",
           "Uai5",
         ]}
-        url="https://uaifive.com/solutions/chatbot-whatsapp"
+        url="https://uaifive.com/chatbot-whatsapp"
         image="https://uaifive.com/images/og-chatbot-whatsapp.jpg"
         type="service"
         schemaOrg={{
@@ -51,6 +51,7 @@ export default function ChatbotWhatsApp() {
             "logo": "https://uaifive.com/images/logo2.png",
           },
           "serviceType": "Automação de Atendimento via Chatbot",
+          "url": "https://uaifive.com/chatbot-whatsapp",
           "areaServed": "Brasil",
           "description":
             "A Uai5 cria chatbots inteligentes para WhatsApp integrados à Botmaker e Blip, com automação de atendimento, IA e integração com sistemas de CRM.",

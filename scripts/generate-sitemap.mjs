@@ -21,7 +21,7 @@ function url(loc, priority='0.7') {
 }
 
 async function main() {
-  const staticRoutes = ['/', '/blog'];
+  const staticRoutes = ['/', '/chatbot-whatsapp', '/blog'];
   const blogRoutes = await getBlogRoutes();
   const routes = [...staticRoutes, ...blogRoutes];
 

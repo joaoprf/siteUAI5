@@ -14,6 +14,23 @@ const Footer = () => {
             <p className="text-gray-400 mb-6">
               Conecte, inove e cresça com soluções inteligentes que falam a linguagem do seu negócio
             </p>
+
+            <div className="space-y-3 mb-6 text-sm">
+              <a
+                href="https://www.uai5solutions.com.br/"
+                className="block text-gray-300 hover:text-white transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Uai5 Solutions: plataforma de agendamentos
+              </a>
+              <a
+                href="/chatbot-whatsapp"
+                className="block text-gray-300 hover:text-white transition-colors"
+              >
+                Parceira certificada Botmaker
+              </a>
+            </div>
             
             <div className="flex space-x-4">
              
@@ -21,6 +38,7 @@ const Footer = () => {
                 href="https://www.linkedin.com/company/uai5/about/" 
                 className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-green-700 hover:text-white transition-colors"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <svg 
                   xmlns="http://www.w3.org/2000/svg" 
@@ -36,6 +54,7 @@ const Footer = () => {
                 href="https://www.instagram.com/uai.five/" 
                 className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-green-700 hover:text-white transition-colors"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <svg 
                   xmlns="http://www.w3.org/2000/svg" 

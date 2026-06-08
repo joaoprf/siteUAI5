@@ -6,7 +6,7 @@ type SEOProps = {
   keywords?: string[];
   image?: string;
   url?: string;
-  type?: "website" | "article";
+  type?: "website" | "article" | "service";
   schemaOrg?: object;
 };
 
