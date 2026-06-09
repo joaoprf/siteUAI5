@@ -1,6 +1,9 @@
 import React from 'react';
+import { useI18n } from '../i18n/index.tsx';
 
 const About = () => {
+  const { t } = useI18n();
+
   return (
     <section id="about" className="py-20 bg-gray-50">
       <div className="container mx-auto px-4 md:px-6">
@@ -31,41 +34,18 @@ const About = () => {
           
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-              Sobre a <span className="text-green-800">Uai5</span>
+              {t.about.heading} <span className="text-green-800">Uai5</span>
             </h2>
             
-            <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-              A Uai5 nasceu com o propósito de levar o melhor da tecnologia – de forma acessível e eficiente – para empresas de todos os tamanhos. 
-Nosso foco é oferecer soluções inteligentes e personalizadas que realmente façam sentido para o seu negócio, utilizando automação, chatbots, integrações e tecnologias conversacionais. 
-            </p>
-
-            <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-              Mais do que aplicar tecnologia por tendência, acreditamos em soluções que agregam valor real, otimizam processos e fortalecem o relacionamento entre empresas e seus clientes. 
-Nossa equipe é formada por especialistas com mais de 6 anos de experiência em desenvolvimento, suporte e sustentação de chatbots, automações e soluções de inteligência conversacional, atuando em diversos segmentos do mercado.
-            </p>
-            
-            <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-              Nossa equipe é formada por especialistas com mais de 10 anos de experiência em desenvolvimento de 
-              chatbots e implementação de soluções de IA conversacional para diversos segmentos do mercado.
-            </p>
-            
-            
+            <p className="text-lg text-gray-700 mb-6 leading-relaxed">{t.about.p1}</p>
+            <p className="text-lg text-gray-700 mb-6 leading-relaxed">{t.about.p2}</p>
             
             <a 
               href="#contact" 
               className="inline-flex items-center px-6 py-3 bg-green-800 hover:bg-green-700 text-white font-medium rounded-md transition-colors duration-300"
             >
-              Fale com um Especialista
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5 ml-2"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
+              {t.about.cta}
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <line x1="5" y1="12" x2="19" y2="12"></line>
                 <polyline points="12 5 19 12 12 19"></polyline>
               </svg>
