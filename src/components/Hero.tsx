@@ -1,6 +1,9 @@
 import React from 'react';
+import { useI18n } from '../i18n/index.tsx';
 
 const Hero = () => {
+  const { t } = useI18n();
+
   return (
     <section 
       id="home"
@@ -21,13 +24,11 @@ const Hero = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="max-w-2xl">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-gray-900 mb-6">
-              Transforme seu negócio com <span className="text-green-800">IA Conversacional</span>
+              {t.hero.title} <span className="text-green-800">{t.hero.highlight}</span>
             </h1>
             
             <p className="text-lg md:text-xl text-gray-700 mb-8 leading-relaxed">
-              Somos especialistas em chatbots e soluções de IA conversacional, 
-              ajudando empresas a melhorar o atendimento ao cliente e automatizar 
-              interações com tecnologia de ponta.
+              {t.hero.description}
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">
@@ -35,14 +36,13 @@ const Hero = () => {
                 href="#contact" 
                 className="px-6 py-3 bg-green-800 hover:bg-green-700 text-white font-medium rounded-md transition-colors duration-300 text-center"
               >
-                Solicitar Consultoria
+                {t.hero.cta_primary}
               </a>
-              
               <a 
                 href="#services" 
                 className="px-6 py-3 bg-white border border-gray-300 hover:border-green-700 text-gray-800 hover:text-green-700 font-medium rounded-md transition-colors duration-300 text-center"
               >
-                Conhecer Serviços
+                {t.hero.cta_secondary}
               </a>
             </div>
           </div>
@@ -59,7 +59,7 @@ const Hero = () => {
             
             <div className="absolute -bottom-10 -left-10 w-64 h-64 bg-white p-4 rounded-lg shadow-xl">
               <div className="bg-green-50 rounded-lg p-6 h-full flex flex-col justify-center">
-                <p className="text-gray-700">Transformar a comunicação entre empresas e pessoas por meio de soluções inteligentes, acessíveis e humanas em inteligência artificial conversacional</p>
+                <p className="text-gray-700">{t.hero.card_text}</p>
               </div>
             </div>
           </div>
@@ -68,17 +68,7 @@ const Hero = () => {
       
       <div className="absolute bottom-5 left-1/2 transform -translate-x-1/2 animate-bounce hidden md:block">
         <a href="#services" className="text-green-800">
-          <svg 
-            xmlns="http://www.w3.org/2000/svg" 
-            width="24" 
-            height="24" 
-            viewBox="0 0 24 24" 
-            fill="none" 
-            stroke="currentColor" 
-            strokeWidth="2" 
-            strokeLinecap="round" 
-            strokeLinejoin="round"
-          >
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
             <path d="M12 5v14M5 12l7 7 7-7"/>
           </svg>
         </a>
