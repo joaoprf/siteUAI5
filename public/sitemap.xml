@@ -1,9 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url><loc>https://uaifive.com/</loc><priority>1.0</priority></url>
-<url><loc>https://uaifive.com/chatbot-whatsapp</loc><priority>0.8</priority></url>
-<url><loc>https://uaifive.com/blog</loc><priority>0.8</priority></url>
-<url><loc>https://uaifive.com/blog/ai-experience</loc><priority>0.8</priority></url>
-<url><loc>https://uaifive.com/blog/development-especialist</loc><priority>0.8</priority></url>
-<url><loc>https://uaifive.com/blog/evolução-chatbots</loc><priority>0.8</priority></url>
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+<url>
+  <loc>https://uaifive.com/</loc>
+  <priority>1.0</priority>
+  <xhtml:link rel="alternate" hreflang="pt-BR"    href="https://uaifive.com/"/>
+  <xhtml:link rel="alternate" hreflang="es"        href="https://uaifive.com/?lang=es"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://uaifive.com/"/>
+</url>
+<url>
+  <loc>https://uaifive.com/?lang=es</loc>
+  <priority>1.0</priority>
+  <xhtml:link rel="alternate" hreflang="pt-BR"    href="https://uaifive.com/"/>
+  <xhtml:link rel="alternate" hreflang="es"        href="https://uaifive.com/?lang=es"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://uaifive.com/"/>
+</url>
+
+<url>
+  <loc>https://uaifive.com/chatbot-whatsapp</loc>
+  <priority>0.8</priority>
+  <xhtml:link rel="alternate" hreflang="pt-BR"    href="https://uaifive.com/chatbot-whatsapp"/>
+  <xhtml:link rel="alternate" hreflang="es"        href="https://uaifive.com/chatbot-whatsapp?lang=es"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://uaifive.com/chatbot-whatsapp"/>
+</url>
+<url>
+  <loc>https://uaifive.com/chatbot-whatsapp?lang=es</loc>
+  <priority>0.8</priority>
+  <xhtml:link rel="alternate" hreflang="pt-BR"    href="https://uaifive.com/chatbot-whatsapp"/>
+  <xhtml:link rel="alternate" hreflang="es"        href="https://uaifive.com/chatbot-whatsapp?lang=es"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://uaifive.com/chatbot-whatsapp"/>
+</url>
+
+<url>
+  <loc>https://uaifive.com/blog</loc>
+  <priority>0.8</priority>
+  <xhtml:link rel="alternate" hreflang="pt-BR"    href="https://uaifive.com/blog"/>
+  <xhtml:link rel="alternate" hreflang="es"        href="https://uaifive.com/blog?lang=es"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://uaifive.com/blog"/>
+</url>
+<url>
+  <loc>https://uaifive.com/blog?lang=es</loc>
+  <priority>0.8</priority>
+  <xhtml:link rel="alternate" hreflang="pt-BR"    href="https://uaifive.com/blog"/>
+  <xhtml:link rel="alternate" hreflang="es"        href="https://uaifive.com/blog?lang=es"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://uaifive.com/blog"/>
+</url>
+
+<url>
+  <loc>https://uaifive.com/blog/ai-experience</loc>
+  <priority>0.8</priority>
+  <xhtml:link rel="alternate" hreflang="pt-BR"    href="https://uaifive.com/blog/ai-experience"/>
+  <xhtml:link rel="alternate" hreflang="es"        href="https://uaifive.com/blog/ai-experience?lang=es"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://uaifive.com/blog/ai-experience"/>
+</url>
+<url>
+  <loc>https://uaifive.com/blog/ai-experience?lang=es</loc>
+  <priority>0.8</priority>
+  <xhtml:link rel="alternate" hreflang="pt-BR"    href="https://uaifive.com/blog/ai-experience"/>
+  <xhtml:link rel="alternate" hreflang="es"        href="https://uaifive.com/blog/ai-experience?lang=es"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://uaifive.com/blog/ai-experience"/>
+</url>
+
+<url>
+  <loc>https://uaifive.com/blog/development-especialist</loc>
+  <priority>0.8</priority>
+  <xhtml:link rel="alternate" hreflang="pt-BR"    href="https://uaifive.com/blog/development-especialist"/>
+  <xhtml:link rel="alternate" hreflang="es"        href="https://uaifive.com/blog/development-especialist?lang=es"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://uaifive.com/blog/development-especialist"/>
+</url>
+<url>
+  <loc>https://uaifive.com/blog/development-especialist?lang=es</loc>
+  <priority>0.8</priority>
+  <xhtml:link rel="alternate" hreflang="pt-BR"    href="https://uaifive.com/blog/development-especialist"/>
+  <xhtml:link rel="alternate" hreflang="es"        href="https://uaifive.com/blog/development-especialist?lang=es"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://uaifive.com/blog/development-especialist"/>
+</url>
+
+<url>
+  <loc>https://uaifive.com/blog/evolu%C3%A7%C3%A3o-chatbots</loc>
+  <priority>0.8</priority>
+  <xhtml:link rel="alternate" hreflang="pt-BR"    href="https://uaifive.com/blog/evolu%C3%A7%C3%A3o-chatbots"/>
+  <xhtml:link rel="alternate" hreflang="es"        href="https://uaifive.com/blog/evolu%C3%A7%C3%A3o-chatbots?lang=es"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://uaifive.com/blog/evolu%C3%A7%C3%A3o-chatbots"/>
+</url>
+<url>
+  <loc>https://uaifive.com/blog/evolu%C3%A7%C3%A3o-chatbots?lang=es</loc>
+  <priority>0.8</priority>
+  <xhtml:link rel="alternate" hreflang="pt-BR"    href="https://uaifive.com/blog/evolu%C3%A7%C3%A3o-chatbots"/>
+  <xhtml:link rel="alternate" hreflang="es"        href="https://uaifive.com/blog/evolu%C3%A7%C3%A3o-chatbots?lang=es"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://uaifive.com/blog/evolu%C3%A7%C3%A3o-chatbots"/>
+</url>
+
 </urlset>
