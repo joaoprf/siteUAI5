@@ -1,10 +1,35 @@
 import React, { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
-import { useI18n, Lang } from "../i18n/index.tsx";
+import { useI18n } from "../i18n/index.tsx";
+
+const LangSwitcher = () => {
+  const { lang, setLang } = useI18n();
+  return (
+    <div className="flex items-center gap-1 text-sm font-medium">
+      <button
+        onClick={() => setLang("pt")}
+        className={`px-2 py-0.5 rounded transition-colors ${
+          lang === "pt" ? "bg-green-800 text-white" : "text-gray-600 hover:text-green-800"
+        }`}
+      >
+        PT
+      </button>
+      <span className="text-gray-300">|</span>
+      <button
+        onClick={() => setLang("es")}
+        className={`px-2 py-0.5 rounded transition-colors ${
+          lang === "es" ? "bg-green-800 text-white" : "text-gray-600 hover:text-green-800"
+        }`}
+      >
+        ES
+      </button>
+    </div>
+  );
+};
 
 const Navbar = () => {
-  const { t, lang, setLang } = useI18n();
+  const { t } = useI18n();
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const navigate = useNavigate();
@@ -42,32 +67,6 @@ const Navbar = () => {
     }
   };
 
-  const LangSwitcher = () => (
-    <div className="flex items-center gap-1 text-sm font-medium">
-      <button
-        onClick={() => setLang("pt")}
-        className={`px-2 py-0.5 rounded transition-colors ${
-          lang === "pt"
-            ? "bg-green-800 text-white"
-            : "text-gray-600 hover:text-green-800"
-        }`}
-      >
-        PT
-      </button>
-      <span className="text-gray-300">|</span>
-      <button
-        onClick={() => setLang("es")}
-        className={`px-2 py-0.5 rounded transition-colors ${
-          lang === "es"
-            ? "bg-green-800 text-white"
-            : "text-gray-600 hover:text-green-800"
-        }`}
-      >
-        ES
-      </button>
-    </div>
-  );
-
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
@@ -76,12 +75,10 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex items-center justify-between">
+
           
             href="#home"
-            onClick={(e) => {
-              e.preventDefault();
-              handleAnchorClick("#home");
-            }}
+            onClick={(e) => { e.preventDefault(); handleAnchorClick("#home"); }}
             className="text-2xl md:text-3xl font-bold flex items-center"
           >
             <span className="text-gray-900">Uai</span>
@@ -91,9 +88,7 @@ const Navbar = () => {
 
           <nav className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => {
-              const isRoute = item.href.startsWith("/");
-              const isAnchor = item.href.startsWith("#");
-              if (isRoute) {
+              if (item.href.startsWith("/")) {
                 return (
                   <Link
                     key={item.label}
@@ -108,18 +103,15 @@ const Navbar = () => {
                   </Link>
                 );
               }
-              if (isAnchor) {
-                return (
-                  <button
-                    key={item.label}
-                    onClick={() => handleAnchorClick(item.href)}
-                    className="font-medium text-gray-800 hover:text-green-700 transition-colors"
-                  >
-                    {item.label}
-                  </button>
-                );
-              }
-              return null;
+              return (
+                <button
+                  key={item.label}
+                  onClick={() => handleAnchorClick(item.href)}
+                  className="font-medium text-gray-800 hover:text-green-700 transition-colors"
+                >
+                  {item.label}
+                </button>
+              );
             })}
           </nav>
 
@@ -140,6 +132,7 @@ const Navbar = () => {
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
+
         </div>
       </div>
 
@@ -148,34 +141,27 @@ const Navbar = () => {
           <div className="container mx-auto px-4 py-4">
             <nav className="flex flex-col space-y-4">
               {navItems.map((item) => {
-                const isRoute = item.href.startsWith("/");
-                const isAnchor = item.href.startsWith("#");
-                if (isRoute) {
+                if (item.href.startsWith("/")) {
                   return (
                     <Link
                       key={item.label}
                       to={item.href}
                       onClick={() => setIsOpen(false)}
-                      className={`font-medium text-gray-800 hover:text-green-700 transition-colors ${
-                        location.pathname.startsWith(item.href) ? "text-green-800 font-semibold" : ""
-                      }`}
+                      className="font-medium text-gray-800 hover:text-green-700 transition-colors"
                     >
                       {item.label}
                     </Link>
                   );
                 }
-                if (isAnchor) {
-                  return (
-                    <button
-                      key={item.label}
-                      onClick={() => { handleAnchorClick(item.href); setIsOpen(false); }}
-                      className="font-medium text-gray-800 hover:text-green-700 text-left"
-                    >
-                      {item.label}
-                    </button>
-                  );
-                }
-                return null;
+                return (
+                  <button
+                    key={item.label}
+                    onClick={() => { handleAnchorClick(item.href); setIsOpen(false); }}
+                    className="font-medium text-gray-800 hover:text-green-700 text-left"
+                  >
+                    {item.label}
+                  </button>
+                );
               })}
               <div className="pt-2 border-t border-gray-100">
                 <LangSwitcher />
