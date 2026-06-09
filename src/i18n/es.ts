@@ -1,90 +1,97 @@
 const es = {
   nav: {
-    home: "Inicio",
-    services: "Servicios",
-    about: "Nosotros",
-    solutions: "Soluciones",
-    blog: "Blog",
-    contact: "Contacto",
-    cta: "Contáctenos",
+    home: "Inicio", services: "Servicios", about: "Nosotros", solutions: "Soluciones",
+    blog: "Blog", contact: "Contacto", cta: "Contáctenos",
   },
   hero: {
-    title: "Transforma tu negocio con",
-    highlight: "IA Conversacional",
-    description:
-      "Somos especialistas en chatbots y soluciones de IA conversacional, ayudando a empresas a mejorar la atención al cliente y automatizar interacciones con tecnología de vanguardia.",
-    cta_primary: "Solicitar Consultoría",
-    cta_secondary: "Conocer Servicios",
-    card_text:
-      "Transformar la comunicación entre empresas y personas mediante soluciones inteligentes, accesibles y humanas en inteligencia artificial conversacional",
+    title: "Transforma tu negocio con", highlight: "IA Conversacional",
+    description: "Somos especialistas en chatbots y soluciones de IA conversacional, ayudando a empresas a mejorar la atención al cliente y automatizar interacciones con tecnología de vanguardia.",
+    cta_primary: "Solicitar Consultoría", cta_secondary: "Conocer Servicios",
+    card_text: "Transformar la comunicación entre empresas y personas mediante soluciones inteligentes, accesibles y humanas en inteligencia artificial conversacional",
   },
   services: {
     heading: "Nuestros Servicios",
-    subheading:
-      "Soluciones completas en IA conversacional y chatbots para impulsar la atención y eficiencia de tu empresa.",
+    subheading: "Soluciones completas en IA conversacional y chatbots para impulsar la atención y eficiencia de tu empresa.",
     learn_more: "Saber más",
     items: [
-      {
-        title: "Chatbots Inteligentes",
-        description:
-          "Desarrolla chatbots personalizados que entienden lenguaje natural y ofrecen atención 24/7 a tus clientes.",
-      },
-      {
-        title: "Soporte Técnico",
-        description:
-          "Soporte especializado para implementación, mantenimiento y optimización de tus chatbots.",
-      },
-      {
-        title: "Análisis de Conversaciones",
-        description:
-          "Extrae insights valiosos de las interacciones de tus chatbots para mejorar continuamente la atención.",
-      },
-      {
-        title: "Consultoría en IA Conversacional",
-        description:
-          "Consultoría estratégica para identificar oportunidades de aplicación de chatbots en los procesos de tu negocio.",
-      },
-      {
-        title: "Desarrollo Personalizado",
-        description:
-          "Creación de chatbots a medida con integración perfecta a tus sistemas y procesos existentes.",
-      },
-      {
-        title: "Mantenimiento Continuo",
-        description:
-          "Servicios de mantenimiento y actualización que garantizan el funcionamiento perfecto de tus chatbots.",
-      },
+      { title: "Chatbots Inteligentes", description: "Desarrolla chatbots personalizados que entienden lenguaje natural y ofrecen atención 24/7 a tus clientes." },
+      { title: "Soporte Técnico", description: "Soporte especializado para implementación, mantenimiento y optimización de tus chatbots." },
+      { title: "Análisis de Conversaciones", description: "Extrae insights valiosos de las interacciones de tus chatbots para mejorar continuamente la atención." },
+      { title: "Consultoría en IA Conversacional", description: "Consultoría estratégica para identificar oportunidades de aplicación de chatbots en los procesos de tu negocio." },
+      { title: "Desarrollo Personalizado", description: "Creación de chatbots a medida con integración perfecta a tus sistemas y procesos existentes." },
+      { title: "Mantenimiento Continuo", description: "Servicios de mantenimiento y actualización que garantizan el funcionamiento perfecto de tus chatbots." },
+    ],
+  },
+  products: {
+    tag: "Productos y alianzas",
+    heading: "Dos frentes para fortalecer tu operación digital",
+    subheading: "Además de proyectos a medida en IA conversacional, Uai5 también desarrolla productos propios y trabaja con socios estratégicos para entregar soluciones completas al mercado.",
+    solutions_tag: "Producto propio Uai5",
+    solutions_title: "Uai5 Solutions",
+    solutions_desc: "Plataforma de control de agendamientos creada por Uai5 para organizar horarios, atenciones y disponibilidad del equipo en un solo lugar.",
+    solutions_items: ["Gestión centralizada de agendas y horarios.", "Más organización para reservas, atenciones y operaciones.", "Visión clara de la disponibilidad para reducir errores en el proceso."],
+    solutions_cta: "Conoce la plataforma de agendamientos Uai5 Solutions",
+    botmaker_tag: "Alianza certificada",
+    botmaker_title: "Socios certificados Botmaker",
+    botmaker_desc: "Uai5 actúa como socio certificado Botmaker en la creación, evolución y mantenimiento de chatbots, automatizaciones de atención y flujos de IA conversacional.",
+    botmaker_items: ["Chatbots para WhatsApp y canales digitales.", "Integraciones con CRM, atención humana y sistemas internos.", "Soporte para mejora continua de los flujos conversacionales."],
+    botmaker_cta: "Ver soluciones de chatbots con Botmaker",
+  },
+  solutions: {
+    heading: "Nuestras Soluciones",
+    subheading: "Conoce algunas de las soluciones que desarrollamos para transformar la atención al cliente con chatbots inteligentes.",
+    features_heading: "Recursos Principales:",
+    cta: "Solicitar Demostración",
+    items: [
+      { title: "Chatbots para Atención", description: "Chatbots inteligentes que utilizan procesamiento de lenguaje natural para atender clientes 24/7 con respuestas precisas y personalizadas.", features: ["Atención 24 horas al día, 7 días a la semana", "Integración con múltiples canales de comunicación", "Personalización de respuestas basada en el historial del cliente", "Escalabilidad para manejar grandes volúmenes de interacciones"] },
+      { title: "Automatización de Conversaciones", description: "Soluciones de automatización inteligente que identifican patrones en conversaciones, aprenden de interacciones anteriores y mejoran continuamente.", features: ["Automatización de respuestas frecuentes", "Análisis de sentimiento en tiempo real", "Aprendizaje continuo para mejor atención", "Integración con sistemas de CRM"] },
+      { title: "Análisis de Conversaciones", description: "Utilizamos algoritmos avanzados para analizar conversaciones, identificar patrones y mejorar continuamente la experiencia del cliente.", features: ["Identificación de temas recurrentes", "Análisis de satisfacción del cliente", "Optimización de flujos de conversación", "Informes detallados de rendimiento"] },
+    ],
+  },
+  contact: {
+    heading: "Contáctenos",
+    subheading: "Estamos listos para ayudar a tu empresa a alcanzar todo su potencial con nuestras soluciones personalizadas. Completa el formulario y nuestro equipo se pondrá en contacto.",
+    address_label: "Nuestra Dirección", address: "Belo Horizonte - MG",
+    whatsapp: "Whatsapp", email_label: "Email", follow: "Síguenos",
+    form_heading: "Envía tu mensaje",
+    name: "Nombre Completo *", email: "E-mail *", phone: "Teléfono", company: "Empresa", message: "Mensaje *",
+    submit: "Enviar Mensaje",
+    success_heading: "¡Mensaje Enviado!",
+    success_text: "Gracias por contactarnos. Nuestro equipo responderá a la brevedad posible.",
+  },
+  testimonials: {
+    heading: "Lo Que Dicen Nuestros Clientes",
+    subheading: "Conoce las historias de éxito de empresas que transformaron sus negocios con nuestras soluciones.",
+    items: [
+      { name: "Carlos Eduardo", company: "TechSolutions Brasil", content: "La implementación del chatbot por Uai5 transformó nuestra atención al cliente. Tuvimos una reducción del 40% en las llamadas de soporte y un aumento significativo en la satisfacción de los clientes. El equipo fue extremadamente profesional y atento durante todo el proceso." },
+      { name: "Mariana Silva", company: "Grupo Inovação", content: "Los servicios de consultoría en IA de Uai5 nos ayudaron a identificar oportunidades de automatización que no habíamos considerado. El resultado fue un ahorro anual de R$350 mil y procesos mucho más eficientes. Lo recomiendo sin dudarlo." },
+      { name: "Rafael Costa", company: "E-commerce Express", content: "Nuestra experiencia con Uai5 fue excepcional. La solución de análisis predictivo que implementaron mejoró drásticamente nuestra capacidad de prever demanda y optimizar inventario. En solo tres meses, redujimos los costos de almacenamiento en un 25%." },
+    ],
+  },
+  team: {
+    heading: "Nuestro Equipo",
+    subheading: "Conoce a los especialistas detrás de nuestras soluciones de inteligencia artificial.",
+    join: "¿Interesado en formar parte de nuestro equipo?",
+    cta: "Contáctenos",
+    members: [
+      { name: "Paulo Oliveira", role: "CEO & Fundador" },
+      { name: "Camila Santos", role: "Directora de Tecnología" },
+      { name: "Ricardo Mendes", role: "Especialista en IA" },
+      { name: "Fernanda Lima", role: "Gerente de Proyectos" },
     ],
   },
   about: {
     heading: "Sobre",
     p1: "Uai5 nació con el propósito de llevar lo mejor de la tecnología —de forma accesible y eficiente— a empresas de todos los tamaños. Nuestro foco es ofrecer soluciones inteligentes y personalizadas que realmente tengan sentido para tu negocio, utilizando automatización, chatbots, integraciones y tecnologías conversacionales.",
-    p2: "Más que aplicar tecnología por tendencia, creemos en soluciones que agregan valor real, optimizan procesos y fortalecen la relación entre empresas y sus clientes. Nuestro equipo está formado por especialistas con más de 6 años de experiencia en desarrollo, soporte y sustentación de chatbots, automatizaciones y soluciones de inteligencia conversacional, actuando en diversos segmentos del mercado.",
+    p2: "Más que aplicar tecnología por tendencia, creemos en soluciones que agregan valor real, optimizan procesos y fortalecen la relación entre empresas y sus clientes. Nuestro equipo está formado por especialistas con más de 6 años de experiencia en desarrollo, soporte y sustentación de chatbots, automatizaciones y soluciones de inteligencia conversacional.",
     cta: "Habla con un Especialista",
   },
   footer: {
-    tagline:
-      "Conecta, innova y crece con soluciones inteligentes que hablan el idioma de tu negocio",
-    quick_links: "Enlaces Rápidos",
-    services: "Servicios",
-    contact: "Contacto",
+    tagline: "Conecta, innova y crece con soluciones inteligentes que hablan el idioma de tu negocio",
+    quick_links: "Enlaces Rápidos", services: "Servicios", contact: "Contacto",
     rights: "Todos los derechos reservados.",
-    links: {
-      home: "Inicio",
-      services: "Servicios",
-      about: "Nosotros",
-      solutions: "Soluciones",
-      testimonials: "Testimonios",
-      contact: "Contacto",
-    },
-    service_items: [
-      "Chatbots Inteligentes",
-      "Soporte Técnico",
-      "Análisis de Datos",
-      "Consultoría en IA",
-      "Desarrollo Personalizado",
-      "Mantenimiento Continuo",
-    ],
+    links: { home: "Inicio", services: "Servicios", about: "Nosotros", solutions: "Soluciones", testimonials: "Testimonios", contact: "Contacto" },
+    service_items: ["Chatbots Inteligentes", "Soporte Técnico", "Análisis de Datos", "Consultoría en IA", "Desarrollo Personalizado", "Mantenimiento Continuo"],
   },
 };
 
